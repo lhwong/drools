@@ -22,7 +22,7 @@ ENV KIE_MAVEN_REPO_PASSWORD admin
 
 ####### Drools KIE Server CUSTOM CONFIGURATION ############
 RUN mkdir -p $HOME/.m2
-ADD etc/standalone-full-kie-server.xml $JBOSS_HOME/standalone/configuration/standalone-full-kie-server.xml
+ADD standalone-full-kie-server.xml $JBOSS_HOME/standalone/configuration/standalone-full-kie-server.xml
 ADD etc/kie-server-users.properties $JBOSS_HOME/standalone/configuration/kie-server-users.properties
 ADD etc/kie-server-roles.properties $JBOSS_HOME/standalone/configuration/kie-server-roles.properties
 ADD etc/start_kie-server.sh $JBOSS_HOME/bin/start_kie-server.sh
